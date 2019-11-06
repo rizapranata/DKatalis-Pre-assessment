@@ -1,0 +1,12 @@
+
+
+function convertDecimal(decimal){
+    let angka= []
+    for(var i = 0; i < decimal.length; i++){
+        angka[i] = parseFloat(decimal[i]) / 100
+    }
+
+    return angka;
+}
+
+console.log(convertDecimal(["33%", "98.1%", "56.44%", "100%"]))
